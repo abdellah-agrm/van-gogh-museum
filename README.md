@@ -15,7 +15,7 @@ This project is an interactive online museum dedicated to the life and art of Vi
 To get started with this project, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/abdellah-agrm/museum.git
+git clone https://github.com/abdellah-agrm/van-gogh-museum.git
 cd van-gogh-museum
 npm install
 ```
