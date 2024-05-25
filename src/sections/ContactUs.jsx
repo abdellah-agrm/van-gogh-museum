@@ -10,16 +10,16 @@ export default function ContactUs() {
 
       <div className="grid grid-cols-2 gap-4 max-md:flex max-md:flex-col">
 
-        <div className="col-span-1 mt-4">
-          <div className="grid grid-col-5 gap-2 text-my-white text-4xl max-md:text-3xl">
-            <motion.p variants={fadeIn('right', 'spring', 0.5, 1)} className="col-span-5">You can contact us</motion.p>
+        <div className="col-span-1 mt-4 mr-6">
+          <div className="grid grid-col-5 gap-2 text-my-white text-4xl max-md:text-xl max-md:mb-4">
+            <motion.p variants={fadeIn('right', 'spring', 0.5, 1)} className="col-span-5">Connect with us</motion.p>
             <motion.div variants={fadeIn('right', 'spring', 1, 1)} className="flex items-center flex-wrap col-span-5 col-start-2">
-              <p>use this form</p>
+              <p>Delve into </p>
               <img src={Contact01} alt="contact 01" className="col-span-1 w-auto h-10 max-sm:h-7 mt-2 max-sm:mt-1 ml-3 rounded-full" />
             </motion.div>
             <motion.div variants={fadeIn('right', 'spring', 1.5, 1)} className="flex items-center flex-wrap col-span-5 col-start-2">
               <img src={Contact02} alt="contact 02" className="col-span-1 w-auto h-10 max-sm:h-7 mt-2 max-sm:mt-1 mr-3 rounded-full" />
-              <p>the product exceeded</p>
+              <p>Share your thoughts</p>
             </motion.div>
           </div>
         </div>

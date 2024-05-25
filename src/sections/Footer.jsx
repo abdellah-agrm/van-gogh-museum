@@ -1,44 +1,20 @@
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 import { footerVariants, textVariant } from "../Elements/Motion";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { footerLinks } from "../Elements/Content";
 
 const Footer = () => {
-  const footerLinks = [
-    {
-      title: "Paintings",
-      links: [
-        { name: "Monalisa", link: "/" },
-        { name: "Dark monalisa", link: "/" },
-        { name: "Light monalisa", link: "/" },
-        { name: "Yellow flowers", link: "/" },
-        { name: "Red flowers", link: "/" },
-      ],
-    },
-    {
-      title: "Get in touch",
-      links: [
-        { name: "customer@museum.com", link: "mailto:customer@museum.com" },
-        { name: "+92554862354", link: "tel:+92554862354" },
-      ],
-    },
-    {
-      title: "Social media",
-      links: [
-        { name: "Instagram", link: "/" },
-        { name: "Facebook", link: "/" },
-      ],
-    },
-  ];
 
   return (
     <motion.footer variants={footerVariants} initial="hidden" whileInView="show" className='padding-x pt-16 max-sm:mt-10 pb-5 max-container font-medium bg-my-white text-my-dark'>
       <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
         <div className='flex flex-col items-start'>
           <motion.a variants={textVariant(0.6)} href='/' className='m-0 font-semibold text-[35px]' >
-            Museum
+            Van Gogh
           </motion.a>
           <motion.p variants={textVariant(0.8)} className='mt-4 text-base leading-7 sm:max-w-sm'>
-            Get shoes ready for the new term.
+          Discover the timeless artistry of Vincent Van Gogh through our immersive online museum.
           </motion.p>
           <motion.div variants={textVariant(1.2)} className='flex items-center grid-cols-5 gap-2 max-sm:flex-col mt-4'>
             <input type="text" placeholder="email" className="col-span-4 input border-my-dark placeholder:text-my-dark text-my-dark font-medium" />
@@ -56,11 +32,10 @@ const Footer = () => {
               </h4>
               <ul>
                 {section.links.map((link) => (
-                  <li
-                    className='mt-3 text-base leading-normal hover:text-gray-600'
-                    key={link.name}
-                  >
-                    <a href={link.link}>{link.name}</a>
+                  <li className='mt-3 cursor-pointer text-base leading-normal hover:text-gray-600' key={link.name}>
+                    <ScrollLink to={link.link} spy={true} smooth={true} duration={800}>
+                      {link.name}
+                    </ScrollLink>
                   </li>
                 ))}
               </ul>

@@ -1,24 +1,18 @@
 import { motion } from "framer-motion";
+import { navLinks } from "../Elements/Content";
 import { navVariants } from "../Elements/Motion";
 import { hamburger } from "../assets/icons";
 import { Link as ScrollLink } from "react-scroll";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const Navbar = () => {
-  const navLinks = [
-    { href: "home", label: "Home" },
-    { href: "paintings", label: "Paintings" },
-    { href: "artists", label: "Artists" },
-    { href: "contact-us", label: "Contact Us" },
-    { href: "reviews", label: "Reviews" },
-  ];
 
   return (
     <header id="header" className='padding-x pt-4 pb-10 z-10 w-full'>
       <motion.nav variants={navVariants} initial="hidden" whileInView="show"
         className="flex justify-between items-center rounded-full px-2 border border-my-white max-container" >
         <a href='/' className='m-0 ml-2 font-semibold text-my-white text-[35px]' >
-          Museum
+          Van Gogh
         </a>
         <ul className='flex-1 mt-1 flex justify-center items-center gap-10 max-md:hidden'>
           {navLinks.map((item, index) => (

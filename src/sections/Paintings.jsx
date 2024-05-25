@@ -1,42 +1,10 @@
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../Elements/Motion";
-import { Painting01, Painting02, Painting03, Painting04, Painting05, Painting06 } from "../assets/images";
 import PaintingCard from "../components/PaintingCard";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { paintings } from "../Elements/Content";
 
 export default function Paintings() {
-  const paintings = [
-    {
-      urlImg: Painting01,
-      details: "Navigate a realm of possibilities designed to fulfill your unique desires, surpassing.",
-      price: "1500 MAD"
-    },
-    {
-      urlImg: Painting02,
-      details: "Navigate a realm of possibilities designed to fulfill your unique.",
-      price: "4100 MAD"
-    },
-    {
-      urlImg: Painting03,
-      details: "Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest.",
-      price: "2500 MAD"
-    },
-    {
-      urlImg: Painting04,
-      details: "Navigate a realm of possibilities designed to fulfill your unique desires, surpassing.",
-      price: "3200 MAD"
-    },
-    {
-      urlImg: Painting05,
-      details: "Navigate a realm of possibilities designed to fulfill your unique.",
-      price: "1800 MAD"
-    },
-    {
-      urlImg: Painting06,
-      details: "Navigate a realm of possibilities desires, surpassing the loftiest expectations.",
-      price: "4700 MAD"
-    },
-  ];
 
   return (
     <motion.div id='paintings' variants={staggerContainer} initial="hidden" whileInView="show"
