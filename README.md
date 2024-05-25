@@ -37,4 +37,3 @@ Contributions are welcome! If you have suggestions or want to contribute to the 
 ---
 
 Built with 💙 and 🎨 by [Abdellah](https://github.com/abdellah-agrm)
-```
