@@ -10,6 +10,10 @@ This project is an interactive online museum dedicated to the life and art of Vi
 - **Responsive Design**: Enjoy a seamless experience on any device, thanks to Tailwind CSS.
 - **Smooth Animations**: Framer Motion provides elegant animations for page transitions and interactions.
 
+## Preview
+
+![Van gogh museum website](/preview.png "Van gogh museum website")
+
 ## Installation
 
 To get started with this project, clone the repository and install the dependencies:
