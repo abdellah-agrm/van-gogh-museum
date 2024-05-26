@@ -1,4 +1,4 @@
-import hamburger from "./hamburger.svg";
+import hamburger from "./menu.svg";
 import arrowRight from "./arrow-right.svg";
 
 export { hamburger, arrowRight };
