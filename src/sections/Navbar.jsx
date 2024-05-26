@@ -30,7 +30,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className='hidden max-md:block'>
-          <img src={hamburger} alt='hamburger icon' width={25} height={25} />
+          <img src={hamburger} alt='hamburger icon' className="h-7 w-auto mr-2" />
         </div>
       </motion.nav>
     </header>
