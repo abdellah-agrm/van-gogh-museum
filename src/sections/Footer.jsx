@@ -46,7 +46,7 @@ const Footer = () => {
 
       <div className='flex justify-between mt-24 max-sm:flex-col max-sm:items-center'>
         <div className='flex flex-1 justify-start items-center gap-2 cursor-pointer'>
-          <p><span className="text-xl mt-1">©</span> Copyright. All rights reserved.</p>
+          <p><span className="text-xl mt-1">©</span>Abdellah. All rights reserved.</p>
         </div>
         <p className='cursor-pointer'>Terms & Conditions</p>
       </div>
